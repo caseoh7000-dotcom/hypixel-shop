@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const ZAPIER_WEBHOOK = "https://hooks.zapier.com/hooks/catch/26329103/uln0ahv/"; // Your Zapier webhook
 
   // Subtotal & upsells
-  let subtotal = 6.99;
+  let subtotal = 29.99;
   let extraItems = 0;
 
   function updateTotals() {
-    const total = subtotal - 6.99; // Free gift
+    const total = subtotal - 29.99; // Free gift
     subtotalSpan.textContent = `$${subtotal.toFixed(2)} USD`;
-    giftSpan.textContent = `-$6.99 USD`;
+    giftSpan.textContent = `-$29.99 USD`;
     extraLabel.textContent = `+${extraItems} items`;
     totalSpan.textContent = `$${total.toFixed(2)} USD`;
   }
